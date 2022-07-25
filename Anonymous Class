@@ -1,0 +1,47 @@
+package Demo02_AnonymousClass;
+
+public class AnonymousClass {
+
+	public static void main(String[] args) {
+
+		MyInterface m= new MyInterface() {
+			// Here m=Ref , we use "m" to assign the Anonymous class
+			//It is the Anonymous Inner Class
+			@Override
+			public void SayHello() {
+				System.out.println(" Hello Kolkata");
+				
+			}
+		};
+		
+      m.SayHello(); // we are calling SayHello() method
+    
+    
+   }
+}
+____________________________________________________
+package Demo02_AnonymousClass;
+
+@FunctionalInterface
+public interface MyInterface {
+        void SayHello();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
